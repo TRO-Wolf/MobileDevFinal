@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".WelcomeActivity">
+
+    <TextView
+        android:id="@+id/titleWelcome"
+        android:layout_width="412dp"
+        android:layout_height="41dp"
+        android:text="Model APP"
+        android:background="#129A8E"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+    <Spinner
+        android:id="@+id/spinnerSelection"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="124dp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleWelcome" />
+
+    <Button
+        android:id="@+id/predict"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/titleWelcome"
+        android:background="@drawable/rounded_button"
+        android:text="Get Prediction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerSelection" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="314dp"
+        android:layout_height="52dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/outline_border"
+        android:text="Information"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/predict" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

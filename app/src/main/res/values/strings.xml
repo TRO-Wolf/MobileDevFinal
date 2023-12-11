@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Final1</string>
+    <string-array name="selection_array">
+        <item>QQQ</item>
+        <item>SPY</item>
+    </string-array>
+</resources>
